@@ -122,7 +122,7 @@ int main(int argc, char **argv)
         // parse '[-N] [message]'
         if (argc > 2)
         {
-            if (*argv[2] == '-') seconds=atoi(argv[2]+1); argc--, argv++;
+            if (*argv[2] == '-') seconds=atoi(argv[2]+1), argc--, argv++;
             if (argc > 2) message=argv[3];
         }
 
